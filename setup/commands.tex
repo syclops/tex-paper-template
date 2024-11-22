@@ -1,0 +1,59 @@
+% User-defined commands go here. For any commands that require a specific
+% package to be loaded, begin the block with a comment line that specifies
+% "Required: ..." to clearly mark that it's a package-specific customization.
+
+\ifsubmit
+  \newcommand{\steve}[1]{}
+  \newcommand{\draft}[1]{}
+\else
+  \newcommand{\steve}[1]{\textcolor{red}{[SM: #1]}}
+  \newcommand{\draft}[1]{\textcolor{blue}{[Draft text: #1]}}
+\fi
+
+% For some papers, we define new notation that only works in math mode. Ensure
+% that these can be easily mentioned in text, with the proper spacing, using the
+% following wrapper command.
+\newcommand{\emxs}[1]{\ensuremath{#1}\xspace}
+
+% Improve formatting of paragraphs.
+%\renewcommand{\paragraph}[1]{\medskip\noindent\textbf{#1}.}
+
+% Slightly compress lines together to make a bit more space. This is an
+% aggressive space hack and should only be used if absolutely necessary.
+%\renewcommand{\baselinestretch}{0.99}
+
+% Required: cite (possibly with noadjust option)
+% Fix ugly citation style: [1],[2] --> [1,2].
+%\renewcommand{\citepunct}{, }
+%\renewcommand{\citedash}{--}
+
+% Required: hyperref
+% The \autoref command ensures that the proper term is used for the relevant
+% reference. Customize the relevant terms for each reference type here.
+%\renewcommand*{\sectionautorefname}{Section}
+%\renewcommand*{\figureautorefname}{Figure}
+%\renewcommand*{\tableautorefname}{Table}
+%\renewcommand*{\footnoteautorefname}{Footnote}
+%\renewcommand*{\equationautorefname}{Equation}
+%\renewcommand*{\itemautorefname}{Definition}
+% If any packages introduce a new type of reference, then they should be
+% customized here.
+%\newcommand\definitionautorefname{Definition}
+%\newcommand{\algorithmautorefname}{Algorithm}
+% In some templates, subsections are referred to as "Subsection x.y", while
+% they may be referred to as "Section x.y" instead. The following line ensures
+% that sections and subsections are always referred to with the same identifier.
+%\let\subsectionautorefname\sectionautorefname
+
+% Required: msc
+% Message sequence charts by default display "msc" in the corner of the chart.
+% Turn that off here.
+%\setmsckeyword{}
+
+% Required: titlesec
+% Play with the title formatting to make more space. This is an aggressive space
+% hack and should only be used if absolutely necessary.
+%\titlespacing\section{0pt}{5pt plus 1pt minus 0pt}{1pt minus 1pt}
+%\titlespacing\subsection{0pt}{4pt plus 2pt minus 0pt}{1pt minus 0pt}
+%\titleformat{name=\section}{\fontsize{11.7pt}{14pt}\bfseries}{\thesection}{1em}{}
+%\titleformat{name=\subsection}{\fontsize{10.73pt}{12.87pt}\bfseries}{\thesubsection}{1em}{}

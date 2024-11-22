@@ -1,0 +1,23 @@
+% This is the setup file. It contains usepackage commands, acronyms, and other
+% useful commands needed to set up the paper. Uncomment the relevant sections to
+% use them.
+
+% Some commands rely on a conditional to have different behavior at submit time
+% (e.g., any author comments are stripped from submission versions of the final
+% paper). Uncomment \submittrue below to use submit-time behavior, and
+% \submitfalse to use default behavior. If both lines are uncommented, whatever
+% comes later will take precedence.
+\newif\ifsubmit{}  % Flag for distinguishing submission commands
+%\submittrue{}
+\submitfalse{}
+
+\input{setup/preamble}
+
+\input{setup/packages}
+
+\input{setup/acros}
+
+\input{setup/commands}
+
+\input{setup/misc}
+

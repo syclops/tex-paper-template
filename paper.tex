@@ -1,0 +1,52 @@
+% Any commands that need to be run before the \documentclass command below
+% should be done in the preclass file below.
+\input{setup/preclass}
+
+% This should match the documentclass specified in your style template.
+\documentclass{article}
+
+% Do any other setup of packages, commands, in the relevant setup file, imported
+% with the following file.
+\input{setup/main}
+
+\begin{document}
+
+% Place title information here. Depending on the specific style template you may
+% need a different command for the title.
+\title{}
+
+% Place author information here. Depending on the specific style template, you
+% may need a different command for the author(s).
+\author{}
+
+% This is where the title, authors, etc. are actually placed. The location of
+% this command, or the command itself, may vary depending on the template.
+\maketitle
+
+% Place all needed sections, including the abstract, here. In some cases, other
+% commands may need to be placed in between sections (e.g., some styles place
+% keywords between the abstract and main paper body). There's almost always an
+% abstract, intro, and conclusion, so place those here.
+
+%\input{sec/abstract}
+
+%\input{sec/intro}
+
+%\input{sec/conclusion}
+
+% Specify the bibliography style and file here. The style will depend on which
+% template you use, but the file (bib.bib in this case) can be left as is,
+% unless you rename that file.
+\bibliographystyle{abbrv}
+\bibliography{bib}
+
+% Some templates put appendices after the bibliography. If so, feel free to add
+% them here. Make sure that the relevant files (e.g., app/foo.tex) exist.
+%\appendix
+%\input{app/foo}
+
+\end{document}
+
+% Anything here or later will be ignored in the final document, so feel free to
+% put notes/etc here.
+
